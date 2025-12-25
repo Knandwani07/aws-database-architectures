@@ -1,1 +1,65 @@
+# 🚀 Execution Guide: Deploying a PHP Web Application Using Amazon EC2 and Aurora MySQL
+
+This document provides a step-by-step execution guide for deploying a PHP-based web application on Amazon EC2 and integrating it with an Amazon Aurora (MySQL-compatible) database.  
+The workflow includes infrastructure provisioning, web server and PHP installation, database setup, application deployment, validation, and cleanup.
+
+---
+
+## 🧩 I. Launch the Amazon EC2 Instance
+
+1. Log in to the AWS Management Console.
+2. Navigate to **Amazon EC2** and select **Launch Instance**.
+3. Configure the instance:
+   - Name: `php-ec2-aurora-instance`
+   - AMI: Amazon Linux
+   - Instance type: `t2.micro` or `t3.micro` (Free Tier eligible)
+4. Create a new RSA key pair and download the `.pem` file securely.
+5. Configure the security group:
+   - Allow inbound HTTP (port 80) from the internet.
+6. Launch the instance.
+7. Verify the instance state is **Running**.
+
+---
+
+## 🧩 II. Create the Amazon Aurora Database
+
+1. Navigate to **Amazon RDS** in the AWS Console.
+2. Select **Create database**.
+3. Choose the following configuration:
+   - Engine: Aurora
+   - Edition: MySQL-compatible
+   - Template: Dev/Test
+4. Configure database settings:
+   - DB cluster identifier
+   - Master username and password
+5. Instance configuration:
+   - Select a burstable instance class.
+   - Disable read replicas.
+6. Connectivity:
+   - Connect the database to the existing EC2 instance.
+   - Use the default VPC and subnet group.
+   - Restrict database access to the EC2 security group.
+7. Create the database and wait for provisioning to complete.
+
+---
+
+## 🧩 III. Connect to the EC2 Instance
+
+1. Open the **EC2 Dashboard**.
+2. Select the running instance.
+3. Click **Connect**.
+4. Choose **EC2 Instance Connect**.
+5. Confirm access to the EC2 terminal.
+
+---
+
+## 🧩 IV. Install and Configure Apache Web Server
+
+Execute the following commands on the EC2 instance:
+
+```bash
+sudo dnf update -y
+sudo dnf install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
