@@ -1,3 +1,6 @@
+
+<img width="1376" height="768" alt="AWS_EC2_Aurora_Architecture_Diagram" src="https://github.com/user-attachments/assets/2c3c818e-b956-452c-862a-08236ac24e3e" />
+
 ## 📦 Deploying PHP Web Applications with Amazon EC2 and Aurora MySQL
 
 ## 📘 Introduction
