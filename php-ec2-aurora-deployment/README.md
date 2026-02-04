@@ -106,12 +106,12 @@ This project strengthens understanding of traditional web application architectu
 ---
 
 ## 🎥 Project Demo Video  
-👉
+👉 https://www.linkedin.com/posts/khushi-nandwani_aws-aurorapostgresql-ec2-activity-7419249980076490752-1f9y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_UPJEBCVOHK7-Dy5jdozttNcasmFHJYAM
 
 ---
 
 ## 📄 Full Project Documentation  
-👉 
+👉 https://open.substack.com/pub/knandwani07/p/deploying-php-web-applications-with?utm_campaign=post-expanded-share&utm_medium=web
 
 ## 🤝 Connect
 
