@@ -115,12 +115,12 @@ This project strengthens understanding of cloud networking, database security, M
 ---
 
 ## 🎥 Project Demo Video  
-👉 
+👉 https://www.linkedin.com/posts/khushi-nandwani_aws-documentdb-nosql-activity-7417437928550940672-Qv9U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_UPJEBCVOHK7-Dy5jdozttNcasmFHJYAM
 
 ---
 
 ## 📄 Full Project Documentation  
-👉 
+👉 https://open.substack.com/pub/knandwani07/p/cinedb-building-a-movie-catalog-with?utm_campaign=post-expanded-share&utm_medium=web
 
 ---
 
